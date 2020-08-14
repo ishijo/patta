@@ -49,26 +49,26 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.today,
-              color: Color(0xff6d695f),
+              color: bottomNavigationBarIndex==0 ? Colors.orange : Color(0xff6d695f),
             ),
             title: Text(
               strings['en'].labelToday,
               style: TextStyle(
                 inherit: true,
-                color: Color(0xff6d695f),
+                color: bottomNavigationBarIndex==0 ? Colors.orange : Color(0xff6d695f),
               ),
             ),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person,
-              color: Color(0xff6d695f),
+              color: bottomNavigationBarIndex==1 ? Colors.orange : Color(0xff6d695f),
             ),
             title: Text(
               strings['en'].labelAccount,
               style: TextStyle(
                 inherit: true,
-                color: Color(0xff6d695f),
+                color: bottomNavigationBarIndex==1 ? Colors.orange : Color(0xff6d695f),
               ),
             ),
           )
